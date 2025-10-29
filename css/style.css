@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e cores */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: lab(32.66% 74.78 -104.46);
+  color: #333333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1900fd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Seções */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #006699;
+  margin-bottom: 10px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #006699;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #006699;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004466;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+.active
