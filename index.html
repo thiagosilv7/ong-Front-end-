@@ -1,75 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ONG dedicada a projetos sociais e voluntariado.">
-  <title>ONG Esperança Viva</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ONG dedicada a causas sociais" />
+  <title>ONG Solidária</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>ONG Esperança Viva</h1>
-    <nav>
+    <nav aria-label="Navegação principal">
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Bem-vindo à ONG Esperança Viva</h1>
-        <p>Junte-se a nós na missão de transformar vidas por meio de projetos sociais e voluntariado.</p>
-      <a href="cadastro.html" class="btn-primary">Junte-se a nós</a>
-      <p>A ONG Esperança Viva atua há mais de 10 anos promovendo inclusão social, educação e saúde em comunidades vulneráveis.</p>
-      </div>    
-    </section>
-    <section>
-      <h2>Quem Somos</h2>
-      <p>A ONG Esperança Viva é uma organização sem fins lucrativos dedicada a melhorar a qualidade de vida de pessoas em situação de vulnerabilidade social. Nossos principais focos são educação, saúde e assistência social.</p>
-    </section> 
-    <section>
-      <h2>Nossos Impactos</h2>
-      <p>Desde nossa fundação, já alcançamos resultados significativos:</p>
-      <ul>  
-        <li>Mais de 5.000 crianças atendidas em programas educacionais.</li>
-        <li>3.000 famílias beneficiadas com ações de saúde e assistência social.</li>
-        <li>200 voluntários engajados em nossas atividades anuais.</li>
-      </ul>
-
-    <section>
-      <h2>Missão, Visão e Valores</h2>
-      <h3>Missão</h3>
-      <p>Transformar vidas por meio de projetos sociais sustentáveis.</p>
-      <h3>Visão</h3>
-      <p>Ser referência nacional em impacto social positivo.</p>
-      <h3>Valores</h3>
-      <ul>
-        <li>Empatia</li>
-        <li>Transparência</li>
-        <li>Compromisso</li>
-        <li>Inclusão</li>
-      </ul>
+    <section id="sobre">
+      <h1>Bem-vindo à ONG Solidária</h1>
+      <p>Transformando vidas com ações sociais.</p>
     </section>
 
-    <section>
-      <h2>Contato</h2>
-      <address>
-        <p>Email: contato@esperancaviva.org.br</p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>Endereço: Rua da Solidariedade, 123 - São Paulo/SP</p>
-      </address>
+    <section id="projetos">
+      <h2>Nossos Projetos</h2>
+      <div id="projetos-container"></div>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <form id="form-contato" aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 ONG Esperança Viva. Todos os direitos reservados.</p>
+    <p>&copy; 2025 ONG Solidária</p>
   </footer>
-  
-  <script src="script.js"></script> 
+
+  <script src="js/main.js"></script>
 </body>
 </html>
